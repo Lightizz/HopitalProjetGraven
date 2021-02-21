@@ -9,109 +9,91 @@
 
 		<!-- Custom-Files -->
 		<link href="css/index.css" rel="stylesheet">
-
 	</head>
 
 	<body>
-		<!-- bannière principale -->
-		<div id="home">
-			<!-- haut de page -->
-			<header>
-				<div>
-					<!-- numero de telephone -->
-					<p><span class="fa fa-volume-control-phone"></span>+331 20 20 20 20</p>
-					
-					<!-- logo -->
-					<h1><a href="index.html">Gravizen<img src="images/logo.png" alt=" "></a></h1>
-				</div>
-			</header>
-			<!-- haut de page -->
-			<!-- menu de navigation -->
-			<div>
-				<nav>
-					<label for="drop">Menu</label>
-					<input type="checkbox" id="drop" />
+		<header>
+			<a class="logo" href="index.html">
+				<h1>Gravizen</h1>
+				<img src="images/logo.png" alt=" ">
+			</a>
+			<span><p class="phone-number">+331 20 20 20 20</p></span>
+		</header>
+		
+		<div class="nav-menu">
+			<ul id="nav-menu-nav">
+				<li class="home"><a href="index.html">Accueil</a></li>
+				<li class="about"><a href="#about">A Propos</a></li>
+				<li class="services"><a href="#services">Services</a></li>
+				<li class="nav-menu-dropdown">Application
 					<ul>
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="#about">A Propos</a></li>
-						<li><a href="#services">Services</a></li>
-						<li>
-							<!-- Menu deroulant -->
-							<label for="drop-2">Application <span class="fa fa-angle-down"
-									aria-hidden="true"></span>
-							</label>
-							<a href="#">Application <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-							<input type="checkbox" id="drop-2" />
-							<ul>
-								<li><a href="#application">Télécharger l'appli</a></li>
-								<li><a href="#appointment">Réserver en ligne</a></li>
-							</ul>
-						</li>
-						<li><a href="#doctors">Equipe</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="#application">Télécharger l'appli</a></li>
+						<li><a href="#appointment">Réserver en ligne</a></li>
 					</ul>
-				</nav>
-			</div>
-			<!-- //menu de navigation -->
-
-			<!-- bannière d'accueil -->
-			<div>
-				<div>
-					<img src="images/banner.png" alt="" />
-				</div>
-				<div>
-					<h6>Bienvenue sur Gravizen</h6>
-					<h3>Des professionnels de la santé à votre service</h3>
-					<p>La consultation à distance n'a jamais été aussi simple</p>
-					<a href="#appointment">Prendre rendez-vous</a>
-				</div>
-			</div>
-			<!-- //bannière d'accueil -->
+					<img class="nav-menu-dropdown-arrow" src="images/dropdown-arrow.png" alt="Ouvrir le menu d'optionspour Application">
+				</li>
+				<li><a href="#doctors">Equipe</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
 		</div>
-		<!-- //bannière principale -->
+
 
 		<!-- Informations -->
 		<section id="infos">
+		<!-- bannière d'accueil -->
+		<div class="home-banner">
+			<div>
+				<img src="images/banner.png" alt=" "/>
+			</div>
+			<div class="txt">
+				<h6>Bienvenue sur Gravizen</h6>
+				<h3>Des professionnels de la santé à votre service</h3>
+				<p>La consultation à distance n'a jamais été aussi simple</p>
+				<div class="take-rdv-btn"><a href="#appointment">Prendre rendez-vous</a></div>
+			</div>
+		</div>
+		<!-- //bannière d'accueil -->
+		<div class="home-infos">
 			<div>
 				<div>
 					<div>
-						<div>
-							<span class="fa fa-phone"></span>
-						</div>
-						<div>
-							<h3>Appelez-nous</h3>
-							<p>+331 20 20 20 20</p>
-						</div>
+						<span class="fa fa-phone"></span>
 					</div>
-				</div>
-				<div>
 					<div>
-						<div>
-							<span class="fa fa-clock-o"></span>
-						</div>
-						<div >
-							<h3>Horaires</h3>
-							<p>Lundi-Vendredi : 8h-22h</p>
-							<p>Week-end : 7h-23h</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div>
-						<div>
-							<span class="fa fa-pencil-square-o"></span>
-						</div>
-						<div>
-							<h3>Rendez-vous</h3>
-							<p>Prendre rendez-vous en ligne</p>
-						</div>
+						<h3>Appelez-nous</h3>
+						<p>+331 20 20 20 20</p>
 					</div>
 				</div>
 			</div>
+			<div>
+				<div>
+					<div>
+						<span class="fa fa-clock-o"></span>
+					</div>
+					<div >
+						<h3>Horaires</h3>
+						<p>Lundi-Vendredi : 8h-22h</p>
+						<p>Week-end : 7h-23h</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<div>
+						<span class="fa fa-pencil-square-o"></span>
+					</div>
+					<div>
+						<h3>Rendez-vous</h3>
+						<p>Prendre rendez-vous en ligne</p>
+					</div>
+				</div>
+			</div>
+		</div>	
 		</section>
 		<!-- //Informations -->
 
-		<!-- Soins -->
+		<div class="b">
+			<!-- Soins -->
 		<div id="services">
 			<div>
 				<div>
@@ -163,36 +145,39 @@
 				<div>
 					<div>
 						<span class="fa fa-h-square"></span>
-						<h4>Humain</h4>
+						<h4>- Humain</h4>
 					</div>
 					<div>
 						<span class="fa fa-ambulance"></span>
-						<h4>Rapide</h4>
+						<h4>- Rapide</h4>
 					</div>
 					<div>
 						<span class="fa fa-medkit"></span>
-						<h4>Précis</h4>
+						<h4>- Précis</h4>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- //A Propos -->
+		</div>
 
-		<!-- Formulaire rendez-vous -->
+
+		<div class="appointment-application">
+			<!-- Formulaire rendez-vous -->
 		<section id="appointment">
 			<div>
-				<div>
-					<h3>Prendre un rendez-vous</h3>
-					<form action="#" method="post">
+				<h3>Prendre un rendez-vous</h3>
+				<div class="appointment-take-rdv">
+					<form action="#" method="post" class="appointment-take-rdv-form">
 						<input placeholder="Nom de famille"name="name" type="text" required="">
 						<input placeholder="Adresse email" name="email" type="email" required="">
-						<input placeholder="Numéro de contact" name="number" type="text" required="">
+						<input placeholder="Numéro de téléphone" name="number" type="text" required="">
 						<input name="date" type="date" required="">
 						<input placeholder="Entrer l'horaire souhaité" name="time" type="text" required="">
 						<button>Soumettre </button>
 					</form>
 				</div>
-				<div>
+				<div class="appointment-img">
 					<img src="images/app1.png" alt="">
 				</div>
 			</div>
@@ -215,15 +200,18 @@
 			</div>
 		</section>
 		<!-- //Télécharger l'application -->
+		</div>
+		
 
-		<!-- Médecins -->
+		<div class="doctors-news">
+			<!-- Médecins -->
 		<section id="doctors">
 			<div>
 				<div>
 					<h3>Nos specialistes</h3>
 					<h6>Professionnels</h6>
 				</div>
-				<div>
+				<div class="doctors-units">
 					<div>
 						<img src="images/t3.png" alt="">
 						<div>
@@ -299,6 +287,7 @@
 			</div>
 		</section>
 		<!-- //Articles -->
+		</div>
 
 		<!-- Contact -->
 		<section id="contact">
@@ -306,7 +295,7 @@
 				<h6>Une question ? un conseil ?</h6>
 				<h3>Contactez-nous</h3>
 			</div>
-			<form action="#" method="post">
+			<form action="#" method="post" class="contact-form">
 				<input type="text" name="name" placeholder="Entrer votre nom..." required="">
 				<input type="email" name="email" placeholder="Entrer votre email..." required="">
 				<input type="text" name="subject" placeholder="Entrer Le Sujet..." required="">
@@ -320,7 +309,7 @@
 		<!-- Chiffres et témoignages -->
 		<section id="facts">
 			<!-- chiffres -->
-			<div>
+			<div class="figures">
 				<h3>Gravizen en quelques chiffres</h3>
 				<div>
 					<div>
@@ -334,10 +323,7 @@
 				</div>
 			</div>
 			<!-- témoignage -->
-			<div >
-				<p><span class="fa fa-quote-left"></span>
-					J'ai téléchargé l'application en 5 minutes et j'ai une consultation dans la journée
-				</p>
+			<div class="testimonials">
 				<div>
 					<div>
 						<img src="images/te1.jpg" alt=" "/>
@@ -347,6 +333,10 @@
 						<p>Patiente</p>
 					</div>
 				</div>
+				<p>
+					<span class="fa fa-quote-left"></span>
+					J'ai téléchargé l'application en 5 minutes et j'ai une consultation dans la journée
+				</p>
 			</div>
 		</section>
 		<!-- //chiffres -->
